@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0753B985-1099-4BC8-9CF6-4267E0B9D05F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NMockTests</RootNamespace>
+    <AssemblyName>NMockTestsFx35</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NetFx35</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Solution Items\NMock.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\Solution Items\Assemblies\NUnit\v20\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\NMock.UnitTests\Actions\CollectActionTest.cs">
+      <Link>Actions\CollectActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\FireActionTest.cs">
+      <Link>Actions\FireActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\GetArgumentsTest.cs">
+      <Link>Actions\GetArgumentsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\GetArugmentsActionTest.cs">
+      <Link>Actions\GetArugmentsActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\LazyReturnActionTests.cs">
+      <Link>Actions\LazyReturnActionTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\QueueActionTest.cs">
+      <Link>Actions\QueueActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\ResultSynthesizerTest.cs">
+      <Link>Actions\ResultSynthesizerTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\ReturnActionTest.cs">
+      <Link>Actions\ReturnActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\ReturnCloneActionTest.cs">
+      <Link>Actions\ReturnCloneActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\SetIndexedParameterActionTest.cs">
+      <Link>Actions\SetIndexedParameterActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\SetNamedParameterActionTest.cs">
+      <Link>Actions\SetNamedParameterActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Actions\ThrowActionTest.cs">
+      <Link>Actions\ThrowActionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\AssertDescription.cs">
+      <Link>AssertDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\AlwaysMatcherTest.cs">
+      <Link>Matchers\AlwaysMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\AndMatcherTest.cs">
+      <Link>Matchers\AndMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\ArgumentsMatcherTest.cs">
+      <Link>Matchers\ArgumentsMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\CallbackListMatcherTests.cs">
+      <Link>Matchers\CallbackListMatcherTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\CallbackMatcherTests.cs">
+      <Link>Matchers\CallbackMatcherTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\ComparisonMatcherTest.cs">
+      <Link>Matchers\ComparisonMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\CountMatcherTests.cs">
+      <Link>Matchers\CountMatcherTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\CustomMatchersTest.cs">
+      <Link>Matchers\CustomMatchersTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\DescriptionOverrideTest.cs">
+      <Link>Matchers\DescriptionOverrideTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\ElementMatcherTest.cs">
+      <Link>Matchers\ElementMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\EqualMatcherTest.cs">
+      <Link>Matchers\EqualMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\FieldMatcherTest.cs">
+      <Link>Matchers\FieldMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\MatcherWithDescription.cs">
+      <Link>Matchers\MatcherWithDescription.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\MethodMatcherTest.cs">
+      <Link>Matchers\MethodMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\MethodNameMatcherTest.cs">
+      <Link>Matchers\MethodNameMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\MockMatcher.cs">
+      <Link>Matchers\MockMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\NotMatcherTest.cs">
+      <Link>Matchers\NotMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\NullMatcherTest.cs">
+      <Link>Matchers\NullMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\OrMatcherTest.cs">
+      <Link>Matchers\OrMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\PropertyMatcherTest.cs">
+      <Link>Matchers\PropertyMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\StringContainsMatcherTest.cs">
+      <Link>Matchers\StringContainsMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\ToStringMatcherTest.cs">
+      <Link>Matchers\ToStringMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Matchers\TypeMatcherTest.cs">
+      <Link>Matchers\TypeMatcherTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\MockFactory\CreateMock.cs">
+      <Link>MockFactory\CreateMock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\MockFactory\OrderedTests.cs">
+      <Link>MockFactory\OrderedTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\AtLeastCountTests.cs">
+      <Link>Mock\Expects\AtLeastCountTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\AtLeastOneTests.cs">
+      <Link>Mock\Expects\AtLeastOneTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\AtMostCountTests.cs">
+      <Link>Mock\Expects\AtMostCountTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\AtMostOnceTests.cs">
+      <Link>Mock\Expects\AtMostOnceTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\BetweenTests.cs">
+      <Link>Mock\Expects\BetweenTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\ExactlyTests.cs">
+      <Link>Mock\Expects\ExactlyTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\BindingTestsBase.cs">
+      <Link>Mock\Expects\IMethodSyntax\BindingTestsBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\DelegateBindingTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\DelegateBindingTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\EventBindingGenericTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\EventBindingGenericTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\EventBindingTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\EventBindingTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\GetPropertyTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\GetPropertyTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\Methods\ArgumentSyntax\WithArgumentsTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\Methods\ArgumentSyntax\WithArgumentsTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\NonVoidMethodTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\Methods\NonVoidMethodTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\NonVoidMethodWithTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\Methods\NonVoidMethodWithTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\ProtectedMethodTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\Methods\ProtectedMethodTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\SetPropertyTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\SetPropertyTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\SetPropertyToTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\SetPropertyToTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\VoidMethodTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\Methods\VoidMethodTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\IMethodSyntax\VoidMethodWithTests.cs">
+      <Link>Mock\Expects\IMethodSyntax\Methods\VoidMethodWithTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\NoTests.cs">
+      <Link>Mock\Expects\NoTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Expects\OneTests.cs">
+      <Link>Mock\Expects\OneTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\IgnoreUnexpectedInvocationsTests.cs">
+      <Link>Mock\IgnoreUnexpectedInvocationsTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\OverridenMembersTests.cs">
+      <Link>Mock\OverridenMembersTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\Stub\IStubSyntax\GetPropertyTests.cs">
+      <Link>Mock\Stub\IStubSyntax\GetPropertyTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Mock\_BasicTestBase.cs">
+      <Link>Mock\_BasicTestBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Monitoring\MethodInfoStub.cs">
+      <Link>Monitoring\MethodInfoStub.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\Monitoring\ParameterInfoStub.cs">
+      <Link>Monitoring\ParameterInfoStub.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\NamedObject.cs">
+      <Link>NamedObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\AbstractParentClass.cs">
+      <Link>_TestStructures\AbstractParentClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\ChildClass.cs">
+      <Link>_TestStructures\ChildClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\Classes\Name.cs">
+      <Link>_TestStructures\Classes\Name.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\Enums\ContactType.cs">
+      <Link>_TestStructures\Enums\ContactType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\ExplicitImplementationParentClass.cs">
+      <Link>_TestStructures\ExplicitImplementationParentClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\GenericClass.cs">
+      <Link>_TestStructures\GenericClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\IChildInterface.cs">
+      <Link>_TestStructures\IChildInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\IGenericInterface.cs">
+      <Link>_TestStructures\IGenericInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\Interfaces\IContactBase.cs">
+      <Link>_TestStructures\Interfaces\IContactBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\InternalParentClass.cs">
+      <Link>_TestStructures\InternalParentClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\IParentInterface.cs">
+      <Link>_TestStructures\IParentInterface.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\ParentClass.cs">
+      <Link>_TestStructures\ParentClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\SealedChildClass.cs">
+      <Link>_TestStructures\SealedChildClass.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock.UnitTests\_TestStructures\TestPresenter.cs">
+      <Link>_TestStructures\TestPresenter.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NMock\NMock.FX35.csproj">
+      <Project>{C87E3391-C5E8-4112-8EE3-A2F81F1506E9}</Project>
+      <Name>NMock.FX35</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Solution Items\NMock.snk">
+      <Link>NMock.snk</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

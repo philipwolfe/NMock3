@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3780B28-9189-4314-9684-579702DF6C57}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NMock</RootNamespace>
+    <AssemblyName>NMock3</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>Bin\Debug\NMock3.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Solution Items\NMock.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\..\Solution Items\Assemblies\castle\SL4\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="..\..\NMock\Actions\CaptureValueAction.cs">
+      <Link>Actions\CaptureValueAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\CollectAction.cs">
+      <Link>Actions\CollectAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\DelegateAction.cs">
+      <Link>Actions\DelegateAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\DelegateReturnAction.cs">
+      <Link>Actions\DelegateReturnAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\FireAction.cs">
+      <Link>Actions\FireAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\GenericCollectAction.cs">
+      <Link>Actions\GenericCollectAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\GetArgumentsAction.cs">
+      <Link>Actions\GetArgumentsAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\InvokeAction.cs">
+      <Link>Actions\InvokeAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\LazyReturnAction.cs">
+      <Link>Actions\LazyReturnAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\QueueAction.cs">
+      <Link>Actions\QueueAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\ResultSynthesizer.cs">
+      <Link>Actions\ResultSynthesizer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\ReturnAction.cs">
+      <Link>Actions\ReturnAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\ReturnCloneAction.cs">
+      <Link>Actions\ReturnCloneAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\ReturnPropertyValueAction.cs">
+      <Link>Actions\ReturnPropertyValueAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\SetIndexedParameterAction.cs">
+      <Link>Actions\SetIndexedParameterAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\SetNamedParameterAction.cs">
+      <Link>Actions\SetNamedParameterAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\SignalAction.cs">
+      <Link>Actions\SignalAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Actions\ThrowAction.cs">
+      <Link>Actions\ThrowAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Constants.cs">
+      <Link>Constants.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\DefinedAs.cs">
+      <Link>DefinedAs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Events\DelegateInvoker.cs">
+      <Link>Events\DelegateInvoker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Events\EventInvoker.cs">
+      <Link>Events\EventInvoker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Events\EventInvokerBase.cs">
+      <Link>Events\EventInvokerBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Events\EventInvokerOfT.cs">
+      <Link>Events\EventInvokerOfT.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Exceptions.cs">
+      <Link>Exceptions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Expect.cs">
+      <Link>Expect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Expectations.cs">
+      <Link>Expectations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IAutoPropertyActionSyntax.cs">
+      <Link>Interfaces\IAutoPropertyActionSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IExpectationList.cs">
+      <Link>Interfaces\IExpectationList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IExpectSyntax.cs">
+      <Link>Interfaces\IExpectSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IStubSyntax.cs">
+      <Link>Interfaces\IStubSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IValueSyntaxBuilder.cs">
+      <Link>Interfaces\IValueSyntaxBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IVerifyableExpectation.cs">
+      <Link>Interfaces\IVerifyableExpectation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\ExpectationBuilderOfT.cs">
+      <Link>Internal\ExpectationBuilderOfT.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\ExpectationSyntax.cs">
+      <Link>Internal\ExpectationSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\PropertyStorageMarker.cs">
+      <Link>Internal\PropertyStorageMarker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\CallbackListMatcher.cs">
+      <Link>Matchers\CallbackListMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\CallbackMatcher.cs">
+      <Link>Matchers\CallbackMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\CountMatcher.cs">
+      <Link>Matchers\CountMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\DelegateMatcher.cs">
+      <Link>Matchers\DelegateMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\GenericMatcher.cs">
+      <Link>Matchers\GenericMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\MethodMatcher.cs">
+      <Link>Matchers\MethodMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\PredicateMatcher.cs">
+      <Link>Matchers\PredicateMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Mock.cs">
+      <Link>Mock.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\MockOfT.cs">
+      <Link>MockOfT.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\Castle\CastleMockObjectFactory.cs">
+      <Link>Proxy\Castle\CastleMockObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\Castle\DynamicProxyMockObjectFactory.cs">
+      <Link>Proxy\Castle\DynamicProxyMockObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\Castle\MockObjectInterceptor.cs">
+      <Link>Proxy\Castle\MockObjectInterceptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\CompositeType.cs">
+      <Link>Proxy\CompositeType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\IMockObjectFactory.cs">
+      <Link>Proxy\IMockObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\InterceptorBase.cs">
+      <Link>Proxy\InterceptorBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\InterfaceMockBase.cs">
+      <Link>Proxy\InterfaceMockBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\LinFu\LinFuMockObjectFactory.cs">
+      <Link>Proxy\LinFu\LinFuMockObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\LinFu\LinFuMockObjectInterceptor.cs">
+      <Link>Proxy\LinFu\LinFuMockObjectInterceptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\MockObjectFactoryBase.cs">
+      <Link>Proxy\MockObjectFactoryBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Extensions.cs">
+      <Link>Extensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IAction.cs">
+      <Link>Interfaces\IAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IActionSyntax.cs">
+      <Link>Interfaces\IActionSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IArgumentSyntax.cs">
+      <Link>Interfaces\IArgumentSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IAutoActionSyntax.cs">
+      <Link>Interfaces\IAutoActionSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IAutoArgumentSyntax.cs">
+      <Link>Interfaces\IAutoArgumentSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IAutoMatchSyntax.cs">
+      <Link>Interfaces\IAutoMatchSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IAutoValueSyntax.cs">
+      <Link>Interfaces\IAutoValueSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\ICommentSyntax.cs">
+      <Link>Interfaces\ICommentSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IExpectation.cs">
+      <Link>Interfaces\IExpectation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IMatchSyntax.cs">
+      <Link>Interfaces\IMatchSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IMethodSyntax.cs">
+      <Link>Interfaces\IMethodSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IMethodSyntax.Generic.cs">
+      <Link>Interfaces\IMethodSyntax.Generic.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IMockDefinition.cs">
+      <Link>Interfaces\IMockDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IMockDefinitionSyntax.cs">
+      <Link>Interfaces\IMockDefinitionSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IMockObject.cs">
+      <Link>Interfaces\IMockObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\ISelfDescribing.cs">
+      <Link>Interfaces\ISelfDescribing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Interfaces\IValueSyntax.cs">
+      <Link>Interfaces\IValueSyntax.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\BuildableExpectation.cs">
+      <Link>Internal\BuildableExpectation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\DescriptionWriter.cs">
+      <Link>Internal\DescriptionWriter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\ExpectationBuilder.cs">
+      <Link>Internal\ExpectationBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\ExpectationOrderingBase.cs">
+      <Link>Internal\ExpectationOrderingBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\MockBuilder.cs">
+      <Link>Internal\MockBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\MockObject.cs">
+      <Link>Internal\MockObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\OrderedExpectations.cs">
+      <Link>Internal\OrderedExpectations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\PropertyArgumentBuilder.cs">
+      <Link>Internal\PropertyArgumentBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\PropertyMatchBuilder.cs">
+      <Link>Internal\PropertyMatchBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\PropertyValueBuilder.cs">
+      <Link>Internal\PropertyValueBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\StubMockStyleDictionary.cs">
+      <Link>Internal\StubMockStyleDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Internal\UnorderedExpectations.cs">
+      <Link>Internal\UnorderedExpectations.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\AlwaysMatcher.cs">
+      <Link>Matchers\AlwaysMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\AndMatcher.cs">
+      <Link>Matchers\AndMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\ArgumentsMatcher.cs">
+      <Link>Matchers\ArgumentsMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\BinaryOperator.cs">
+      <Link>Matchers\BinaryOperator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\ComparisonMatcher.cs">
+      <Link>Matchers\ComparisonMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\DescriptionOverride.cs">
+      <Link>Matchers\DescriptionOverride.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\ElementMatcher.cs">
+      <Link>Matchers\ElementMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\EqualMatcher.cs">
+      <Link>Matchers\EqualMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\FieldMatcher.cs">
+      <Link>Matchers\FieldMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\GenericMethodTypeParametersMatcher.cs">
+      <Link>Matchers\GenericMethodTypeParametersMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\IndexGetterArgumentsMatcher.cs">
+      <Link>Matchers\IndexGetterArgumentsMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\IndexSetterArgumentsMatcher.cs">
+      <Link>Matchers\IndexSetterArgumentsMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\LikeMatcher.cs">
+      <Link>Matchers\LikeMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\ListMatcher.cs">
+      <Link>Matchers\ListMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\Matcher.cs">
+      <Link>Matchers\Matcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\MethodNameMatcher.cs">
+      <Link>Matchers\MethodNameMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\NotMatcher.cs">
+      <Link>Matchers\NotMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\NullMatcher.cs">
+      <Link>Matchers\NullMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\OrMatcher.cs">
+      <Link>Matchers\OrMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\PropertyMatcher.cs">
+      <Link>Matchers\PropertyMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\StringContainsMatcher.cs">
+      <Link>Matchers\StringContainsMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\ToStringMatcher.cs">
+      <Link>Matchers\ToStringMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Matchers\TypeMatcher.cs">
+      <Link>Matchers\TypeMatcher.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\MockFactory.cs">
+      <Link>MockFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\MockStyle.cs">
+      <Link>MockStyle.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Monitoring\IInvokable.cs">
+      <Link>Monitoring\IInvokable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Monitoring\Invocation.cs">
+      <Link>Monitoring\Invocation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Monitoring\InvocationRecorder.cs">
+      <Link>Monitoring\InvocationRecorder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Monitoring\ParameterList.cs">
+      <Link>Monitoring\ParameterList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Properties\Resources.Designer.cs">
+      <Link>Properties\Resources.Designer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\Reflective\IInterceptor.cs">
+      <Link>Proxy\Reflective\IInterceptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\Reflective\IInvocation.cs">
+      <Link>Proxy\Reflective\IInvocation.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\Reflective\ReflectiveInterceptor.cs">
+      <Link>Proxy\Reflective\ReflectiveInterceptor.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Proxy\Reflective\ReflectiveMockObjectFactory.cs">
+      <Link>Proxy\Reflective\ReflectiveMockObjectFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Stub.cs">
+      <Link>Stub.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\Collect.cs">
+      <Link>Syntax\Collect.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\Expects.cs">
+      <Link>Syntax\Expects.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\ExpectsOfT.cs">
+      <Link>Syntax\ExpectsOfT.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\GetArguments.cs">
+      <Link>Syntax\GetArguments.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\Has.cs">
+      <Link>Syntax\Has.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\Invoke.cs">
+      <Link>Syntax\Invoke.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\Is.cs">
+      <Link>Syntax\Is.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\Return.cs">
+      <Link>Syntax\Return.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\Signal.cs">
+      <Link>Syntax\Signal.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Syntax\Throw.cs">
+      <Link>Syntax\Throw.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\That.cs">
+      <Link>That.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NMock\Verify.cs">
+      <Link>Verify.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\NMock\Properties\Resources.resx">
+      <Link>Properties\Resources.resx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\NMock\ilmerge.exclusions.txt">
+      <Link>ilmerge.exclusions.txt</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Solution Items\NMock.snk">
+      <Link>NMock.snk</Link>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)NMock3.xml" "$(SolutionDir)Solution Items\Merged Assemblies\SL40\NMock3.xml" /Y
+"$(SolutionDir)Solution Items\tools\ilmerge\ilmerge.exe" /out:"$(SolutionDir)Solution Items\Merged Assemblies\SL40\NMock3.dll" /keyfile:"$(SolutionDir)Solution Items\NMock.snk" /internalize:"$(TargetDir)ilmerge.exclusions.txt" /log:"$(SolutionDir)Solution Items\Merged Assemblies\SL40\NMock.ilmerge.log.txt" "$(TargetPath)" "$(SolutionDir)Solution Items\Assemblies\castle\SL4\Castle.Core.dll" /xmldocs  /targetplatform:v4,"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\Silverlight\v4.0"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

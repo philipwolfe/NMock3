@@ -1,0 +1,14 @@
+
+Source/_ReSharper.NMock3
+Source/FX35/NMock/bin
+Source/FX35/NMock/obj
+Source/FX35/NMock.UnitTests/obj
+Source/FX35/NMock.UnitTests/bin
+Source/NMock/bin
+Source/NMock/obj
+Source/NMock.UnitTests/obj
+Source/NMock.UnitTests/bin
+*.vspscc
+*.vssscc
+*.user
+*.suo

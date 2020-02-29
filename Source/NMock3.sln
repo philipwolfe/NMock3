@@ -1,0 +1,251 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F7676FC-6787-4ABB-8B0A-3E8AA0CE303E}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\NMock.snk = Solution Items\NMock.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{E027C702-F10F-429E-974F-20EF4FC40A15}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Docs\LICENSE.txt = Solution Items\Docs\LICENSE.txt
+		Solution Items\Docs\NMock3 Cheat Sheet.doc = Solution Items\Docs\NMock3 Cheat Sheet.doc
+		Solution Items\Docs\NMock3 Cheat Sheet.pdf = Solution Items\Docs\NMock3 Cheat Sheet.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{FEE3D28F-FE2A-4E0A-9923-EB549942EC88}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\images\NMock3 Logo.png = Solution Items\images\NMock3 Logo.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{2F193AB5-2090-47CD-94A6-F6C8C4314842}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{CB6B6235-F21F-41DB-8E04-52753129447B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Castle", "Castle", "{226607C3-66DB-422C-9702-3C1778F37E88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ilmerge", "ilmerge", "{DD69C64A-7533-4B12-AA29-3F85C45AB0E1}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Tools\ilmerge\ILMerge.doc = Solution Items\Tools\ilmerge\ILMerge.doc
+		Solution Items\Tools\ilmerge\ILMerge.exe = Solution Items\Tools\ilmerge\ILMerge.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Merged Assemblies", "Merged Assemblies", "{07DEB1A5-E539-4CA4-9438-552FE3E13AEA}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Merged Assemblies\ReadMe.txt = Solution Items\Merged Assemblies\ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Help", "Help", "{F5EDA349-1AA3-4D9C-A3C8-EBA704C9EDDF}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Help\NMock3.shfbproj = Solution Items\Help\NMock3.shfbproj
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Content", "Content", "{45B9A8B1-55DD-4617-AE96-F7B366BC7B06}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Help\Content\Content Layout.content = Solution Items\Help\Content\Content Layout.content
+		Solution Items\Help\Content\FAQ.aml = Solution Items\Help\Content\FAQ.aml
+		Solution Items\Help\Content\Getting Started.aml = Solution Items\Help\Content\Getting Started.aml
+		Solution Items\Help\Content\Issues.aml = Solution Items\Help\Content\Issues.aml
+		Solution Items\Help\Content\License Agreement.aml = Solution Items\Help\Content\License Agreement.aml
+		Solution Items\Help\Content\NMock3Logo.png = Solution Items\Help\Content\NMock3Logo.png
+		Solution Items\Help\Content\Tutorial.aml = Solution Items\Help\Content\Tutorial.aml
+		Solution Items\Help\Content\Welcome.aml = Solution Items\Help\Content\Welcome.aml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v40", "v40", "{6FAD4DB2-31FA-499F-AA73-7009521DB4E8}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Assemblies\castle\v40\Castle.Core.dll = Solution Items\Assemblies\castle\v40\Castle.Core.dll
+		Solution Items\Assemblies\castle\v40\Castle.Core.pdb = Solution Items\Assemblies\castle\v40\Castle.Core.pdb
+		Solution Items\Assemblies\castle\v40\Castle.Core.xml = Solution Items\Assemblies\castle\v40\Castle.Core.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SL4", "SL4", "{95AEEBC4-BB9C-44FD-B665-50BF9FF23BA5}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Assemblies\castle\SL4\Castle.Core.dll = Solution Items\Assemblies\castle\SL4\Castle.Core.dll
+		Solution Items\Assemblies\castle\SL4\Castle.Core.XML = Solution Items\Assemblies\castle\SL4\Castle.Core.XML
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v40", "v40", "{24E6FBDA-82E9-4B64-A8E1-336C0FC10892}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Merged Assemblies\v40\dir = Solution Items\Merged Assemblies\v40\dir
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LinFu", "LinFu", "{A26C0DE5-19CD-43DE-BDEA-11CBACAE4C1A}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Assemblies\LinFu\LinFu.Core.dll = Solution Items\Assemblies\LinFu\LinFu.Core.dll
+		Solution Items\Assemblies\LinFu\LinFu.Core.xml = Solution Items\Assemblies\LinFu\LinFu.Core.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FX4", "FX4", "{CBE93A19-7C92-47AE-8C37-FCE74E8EBD26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FX35", "FX35", "{3B2A301B-7B83-4C21-B6F5-00943D32B9E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SL4", "SL4", "{1EAC33BB-5C3B-4072-891F-0580168D2998}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v35", "v35", "{20AEF2DA-4C1F-4FF8-A655-A6A0A818823A}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Assemblies\castle\v35\Castle.Core.dll = Solution Items\Assemblies\castle\v35\Castle.Core.dll
+		Solution Items\Assemblies\castle\v35\Castle.Core.pdb = Solution Items\Assemblies\castle\v35\Castle.Core.pdb
+		Solution Items\Assemblies\castle\v35\Castle.Core.XML = Solution Items\Assemblies\castle\v35\Castle.Core.XML
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v35", "v35", "{8D87668C-2333-4771-9E39-2DF11F11D128}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Merged Assemblies\v35\dir = Solution Items\Merged Assemblies\v35\dir
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NUnit", "NUnit", "{E548ABE2-1AAA-4C6F-964A-F766C6819DFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "v20", "v20", "{3558E614-80C3-4299-82BA-171431EF39A5}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Assemblies\NUnit\v20\nunit.framework.dll = Solution Items\Assemblies\NUnit\v20\nunit.framework.dll
+		Solution Items\Assemblies\NUnit\v20\nunit.framework.xml = Solution Items\Assemblies\NUnit\v20\nunit.framework.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microsoft.UnitTests", "Microsoft.UnitTests", "{34A8458E-44F0-434D-8BD4-6BD41D6FF8B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SL40", "SL40", "{10020B69-A567-47F7-8694-ED72A09C16BE}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.Silverlight.Testing.dll = Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.Silverlight.Testing.dll
+		Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.Silverlight.Testing.extmap.xml = Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.Silverlight.Testing.extmap.xml
+		Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.Silverlight.Testing.pdb = Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.Silverlight.Testing.pdb
+		Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.Silverlight.Testing.xml = Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.Silverlight.Testing.xml
+		Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll = Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.dll
+		Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.extmap.xml = Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.extmap.xml
+		Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.pdb = Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.pdb
+		Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml = Solution Items\Assemblies\Microsoft.UnitTests\SL40\Microsoft.VisualStudio.QualityTools.UnitTesting.Silverlight.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AgUnit", "AgUnit", "{8980AAEA-A41C-44B9-ABEB-8796D4DA8C6F}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Tools\AgUnit\AgUnit.Runner.Common.dll = Solution Items\Tools\AgUnit\AgUnit.Runner.Common.dll
+		Solution Items\Tools\AgUnit\AgUnit.Runner.Resharper51.dll = Solution Items\Tools\AgUnit\AgUnit.Runner.Resharper51.dll
+		Solution Items\Tools\AgUnit\AgUnit.url.URL = Solution Items\Tools\AgUnit\AgUnit.url.URL
+		Solution Items\Tools\AgUnit\Compiled against Resharper v5.1.1753.4.txt = Solution Items\Tools\AgUnit\Compiled against Resharper v5.1.1753.4.txt
+		Solution Items\Tools\AgUnit\Ionic.Zip.dll = Solution Items\Tools\AgUnit\Ionic.Zip.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SL40", "SL40", "{E3B13AAA-B634-4C52-9DD6-BA6ADFBCF12C}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Merged Assemblies\SL40\dir = Solution Items\Merged Assemblies\SL40\dir
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGet", "NuGet", "{CCDD6BDF-F03A-4718-8929-D530530113E7}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Tools\NuGet\NMock3.nuspec = Solution Items\Tools\NuGet\NMock3.nuspec
+		Solution Items\Tools\NuGet\NMockTest.cs = Solution Items\Tools\NuGet\NMockTest.cs
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMock", "NMock\NMock.csproj", "{56BEFC66-6131-467C-9666-82F68AB00919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMock.UnitTests", "NMock.UnitTests\NMock.UnitTests.csproj", "{FB31B06C-05E9-47A8-85D5-C17D9C9EC067}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMock.SL4", "SL4\NMock\NMock.SL4.csproj", "{E3780B28-9189-4314-9684-579702DF6C57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMock.UnitTests.SL4", "SL4\NMock.UnitTests\NMock.UnitTests.SL4.csproj", "{084BCA9E-7E67-4A02-A967-C7CF37B5B2DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMock.FX35", "FX35\NMock\NMock.FX35.csproj", "{C87E3391-C5E8-4112-8EE3-A2F81F1506E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NMock.UnitTests.FX35", "FX35\NMock.UnitTests\NMock.UnitTests.FX35.csproj", "{0753B985-1099-4BC8-9CF6-4267E0B9D05F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global Code Files", "Global Code Files", "{7F3B56C9-6818-47DA-B417-EEBCB5072ECC}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Global Code Files\AssemblyInfo.Global.cs = Solution Items\Global Code Files\AssemblyInfo.Global.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs07
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NMock\\NMock.csproj
+		SccProjectTopLevelParentUniqueName1 = NMock3.sln
+		SccProjectName1 = NMock
+		SccLocalPath1 = NMock
+		SccProjectUniqueName2 = NMock.UnitTests\\NMock.UnitTests.csproj
+		SccProjectTopLevelParentUniqueName2 = NMock3.sln
+		SccProjectName2 = NMock.UnitTests
+		SccLocalPath2 = NMock.UnitTests
+		SccProjectUniqueName3 = SL4\\NMock\\NMock.SL4.csproj
+		SccProjectTopLevelParentUniqueName3 = NMock3.sln
+		SccProjectName3 = SL4/NMock
+		SccLocalPath3 = SL4\\NMock
+		SccProjectUniqueName4 = SL4\\NMock.UnitTests\\NMock.UnitTests.SL4.csproj
+		SccProjectTopLevelParentUniqueName4 = NMock3.sln
+		SccProjectName4 = SL4/NMock.UnitTests
+		SccLocalPath4 = SL4\\NMock.UnitTests
+		SccProjectUniqueName5 = FX35\\NMock\\NMock.FX35.csproj
+		SccProjectTopLevelParentUniqueName5 = NMock3.sln
+		SccProjectName5 = FX35/NMock
+		SccLocalPath5 = FX35\\NMock
+		SccProjectUniqueName6 = FX35\\NMock.UnitTests\\NMock.UnitTests.FX35.csproj
+		SccProjectTopLevelParentUniqueName6 = NMock3.sln
+		SccProjectName6 = FX35/NMock.UnitTests
+		SccLocalPath6 = FX35\\NMock.UnitTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56BEFC66-6131-467C-9666-82F68AB00919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56BEFC66-6131-467C-9666-82F68AB00919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56BEFC66-6131-467C-9666-82F68AB00919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56BEFC66-6131-467C-9666-82F68AB00919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB31B06C-05E9-47A8-85D5-C17D9C9EC067}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB31B06C-05E9-47A8-85D5-C17D9C9EC067}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB31B06C-05E9-47A8-85D5-C17D9C9EC067}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB31B06C-05E9-47A8-85D5-C17D9C9EC067}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3780B28-9189-4314-9684-579702DF6C57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3780B28-9189-4314-9684-579702DF6C57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3780B28-9189-4314-9684-579702DF6C57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3780B28-9189-4314-9684-579702DF6C57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{084BCA9E-7E67-4A02-A967-C7CF37B5B2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084BCA9E-7E67-4A02-A967-C7CF37B5B2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084BCA9E-7E67-4A02-A967-C7CF37B5B2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084BCA9E-7E67-4A02-A967-C7CF37B5B2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C87E3391-C5E8-4112-8EE3-A2F81F1506E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C87E3391-C5E8-4112-8EE3-A2F81F1506E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C87E3391-C5E8-4112-8EE3-A2F81F1506E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C87E3391-C5E8-4112-8EE3-A2F81F1506E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0753B985-1099-4BC8-9CF6-4267E0B9D05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0753B985-1099-4BC8-9CF6-4267E0B9D05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0753B985-1099-4BC8-9CF6-4267E0B9D05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0753B985-1099-4BC8-9CF6-4267E0B9D05F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E027C702-F10F-429E-974F-20EF4FC40A15} = {9F7676FC-6787-4ABB-8B0A-3E8AA0CE303E}
+		{FEE3D28F-FE2A-4E0A-9923-EB549942EC88} = {9F7676FC-6787-4ABB-8B0A-3E8AA0CE303E}
+		{2F193AB5-2090-47CD-94A6-F6C8C4314842} = {9F7676FC-6787-4ABB-8B0A-3E8AA0CE303E}
+		{CB6B6235-F21F-41DB-8E04-52753129447B} = {9F7676FC-6787-4ABB-8B0A-3E8AA0CE303E}
+		{07DEB1A5-E539-4CA4-9438-552FE3E13AEA} = {9F7676FC-6787-4ABB-8B0A-3E8AA0CE303E}
+		{F5EDA349-1AA3-4D9C-A3C8-EBA704C9EDDF} = {9F7676FC-6787-4ABB-8B0A-3E8AA0CE303E}
+		{7F3B56C9-6818-47DA-B417-EEBCB5072ECC} = {9F7676FC-6787-4ABB-8B0A-3E8AA0CE303E}
+		{226607C3-66DB-422C-9702-3C1778F37E88} = {2F193AB5-2090-47CD-94A6-F6C8C4314842}
+		{A26C0DE5-19CD-43DE-BDEA-11CBACAE4C1A} = {2F193AB5-2090-47CD-94A6-F6C8C4314842}
+		{E548ABE2-1AAA-4C6F-964A-F766C6819DFD} = {2F193AB5-2090-47CD-94A6-F6C8C4314842}
+		{34A8458E-44F0-434D-8BD4-6BD41D6FF8B0} = {2F193AB5-2090-47CD-94A6-F6C8C4314842}
+		{DD69C64A-7533-4B12-AA29-3F85C45AB0E1} = {CB6B6235-F21F-41DB-8E04-52753129447B}
+		{8980AAEA-A41C-44B9-ABEB-8796D4DA8C6F} = {CB6B6235-F21F-41DB-8E04-52753129447B}
+		{CCDD6BDF-F03A-4718-8929-D530530113E7} = {CB6B6235-F21F-41DB-8E04-52753129447B}
+		{6FAD4DB2-31FA-499F-AA73-7009521DB4E8} = {226607C3-66DB-422C-9702-3C1778F37E88}
+		{95AEEBC4-BB9C-44FD-B665-50BF9FF23BA5} = {226607C3-66DB-422C-9702-3C1778F37E88}
+		{20AEF2DA-4C1F-4FF8-A655-A6A0A818823A} = {226607C3-66DB-422C-9702-3C1778F37E88}
+		{24E6FBDA-82E9-4B64-A8E1-336C0FC10892} = {07DEB1A5-E539-4CA4-9438-552FE3E13AEA}
+		{8D87668C-2333-4771-9E39-2DF11F11D128} = {07DEB1A5-E539-4CA4-9438-552FE3E13AEA}
+		{E3B13AAA-B634-4C52-9DD6-BA6ADFBCF12C} = {07DEB1A5-E539-4CA4-9438-552FE3E13AEA}
+		{45B9A8B1-55DD-4617-AE96-F7B366BC7B06} = {F5EDA349-1AA3-4D9C-A3C8-EBA704C9EDDF}
+		{56BEFC66-6131-467C-9666-82F68AB00919} = {CBE93A19-7C92-47AE-8C37-FCE74E8EBD26}
+		{FB31B06C-05E9-47A8-85D5-C17D9C9EC067} = {CBE93A19-7C92-47AE-8C37-FCE74E8EBD26}
+		{C87E3391-C5E8-4112-8EE3-A2F81F1506E9} = {3B2A301B-7B83-4C21-B6F5-00943D32B9E0}
+		{0753B985-1099-4BC8-9CF6-4267E0B9D05F} = {3B2A301B-7B83-4C21-B6F5-00943D32B9E0}
+		{E3780B28-9189-4314-9684-579702DF6C57} = {1EAC33BB-5C3B-4072-891F-0580168D2998}
+		{084BCA9E-7E67-4A02-A967-C7CF37B5B2DB} = {1EAC33BB-5C3B-4072-891F-0580168D2998}
+		{3558E614-80C3-4299-82BA-171431EF39A5} = {E548ABE2-1AAA-4C6F-964A-F766C6819DFD}
+		{10020B69-A567-47F7-8694-ED72A09C16BE} = {34A8458E-44F0-434D-8BD4-6BD41D6FF8B0}
+	EndGlobalSection
+EndGlobal

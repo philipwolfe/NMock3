@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56BEFC66-6131-467C-9666-82F68AB00919}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NMock</RootNamespace>
+    <AssemblyName>NMock3</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NETFX40</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\NMock3.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Fx 3.5|AnyCPU'">
+    <OutputPath>bin\Fx 3.5\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Fx 4.0|AnyCPU'">
+    <OutputPath>bin\Fx 4.0\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SL 4|AnyCPU'">
+    <OutputPath>bin\SL 4\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\Solution Items\NMock.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\Solution Items\Assemblies\castle\v40\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.Core">
+      <HintPath>..\Solution Items\Assemblies\LinFu\LinFu.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\CaptureValueAction.cs" />
+    <Compile Include="Actions\CollectAction.cs" />
+    <Compile Include="Actions\DelegateAction.cs" />
+    <Compile Include="Actions\FireAction.cs" />
+    <Compile Include="Actions\DelegateReturnAction.cs" />
+    <Compile Include="Actions\GenericCollectAction.cs" />
+    <Compile Include="Actions\GetArgumentsAction.cs" />
+    <Compile Include="Actions\InvokeAction.cs" />
+    <Compile Include="Actions\LazyReturnAction.cs" />
+    <Compile Include="Actions\QueueAction.cs" />
+    <Compile Include="Actions\ResultSynthesizer.cs" />
+    <Compile Include="Actions\ReturnAction.cs" />
+    <Compile Include="Actions\ReturnCloneAction.cs" />
+    <Compile Include="Actions\ReturnPropertyValueAction.cs" />
+    <Compile Include="Actions\SetIndexedParameterAction.cs" />
+    <Compile Include="Actions\SetNamedParameterAction.cs" />
+    <Compile Include="Actions\SignalAction.cs" />
+    <Compile Include="Actions\ThrowAction.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Expect.cs" />
+    <Compile Include="Expectations.cs" />
+    <Compile Include="Fake.cs" />
+    <Compile Include="Interfaces\IAutoPropertyActionSyntax.cs" />
+    <Compile Include="Interfaces\IExpectationList.cs" />
+    <Compile Include="Interfaces\IExpectSyntax.cs" />
+    <Compile Include="Interfaces\IStubSyntax.cs" />
+    <Compile Include="Interfaces\IValueSyntaxBuilder.cs" />
+    <Compile Include="Interfaces\IVerifyableExpectation.cs" />
+    <Compile Include="Internal\DynamicGeneric.cs" />
+    <Compile Include="Internal\ExpectationBuilderOfT.cs" />
+    <Compile Include="Internal\ExpectationSyntax.cs" />
+    <Compile Include="Internal\PropertyMatchBuilder.cs" />
+    <Compile Include="Internal\PropertyStorageMarker.cs" />
+    <Compile Include="Matchers\CallbackMatcher.cs" />
+    <Compile Include="Matchers\CallbackListMatcher.cs" />
+    <Compile Include="Matchers\MethodMatcher.cs" />
+    <Compile Include="Matchers\CountMatcher.cs" />
+    <Compile Include="Matchers\DelegateMatcher.cs" />
+    <Compile Include="Matchers\PredicateMatcher.cs" />
+    <Compile Include="Mock.cs" />
+    <Compile Include="Monitoring\InvocationRecorder.cs" />
+    <Compile Include="Proxy\InterceptorBase.cs" />
+    <Compile Include="Proxy\InterfaceMockBase.cs" />
+    <Compile Include="Proxy\LinFu\LinFuMockObjectFactory.cs" />
+    <Compile Include="Proxy\LinFu\LinFuMockObjectInterceptor.cs" />
+    <Compile Include="Proxy\MockObjectFactoryBase.cs" />
+    <Compile Include="Proxy\Reflective\IInterceptor.cs" />
+    <Compile Include="Proxy\Reflective\IInvocation.cs" />
+    <Compile Include="Proxy\Reflective\ReflectiveInterceptor.cs" />
+    <Compile Include="Proxy\Reflective\ReflectiveMockObjectFactory.cs" />
+    <Compile Include="Syntax\Collect.cs" />
+    <Compile Include="DefinedAs.cs" />
+    <Compile Include="Events\DelegateInvoker.cs" />
+    <Compile Include="Events\EventInvoker.cs" />
+    <Compile Include="Events\EventInvokerBase.cs" />
+    <Compile Include="Events\EventInvokerOfT.cs" />
+    <Compile Include="Syntax\Expects.cs" />
+    <Compile Include="Syntax\ExpectsOfT.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Syntax\GetArguments.cs" />
+    <Compile Include="Syntax\Has.cs" />
+    <Compile Include="Interfaces\IAction.cs" />
+    <Compile Include="Interfaces\IExpectation.cs" />
+    <Compile Include="Interfaces\IMockDefinition.cs" />
+    <Compile Include="Internal\BuildableExpectation.cs" />
+    <Compile Include="Proxy\CompositeType.cs" />
+    <Compile Include="Internal\DescriptionWriter.cs" />
+    <Compile Include="Internal\ExpectationBuilder.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="Internal\ExpectationOrderingBase.cs" />
+    <Compile Include="Interfaces\IMockObject.cs" />
+    <Compile Include="Internal\MockBuilder.cs" />
+    <Compile Include="Internal\MockObject.cs" />
+    <Compile Include="Internal\OrderedExpectations.cs" />
+    <Compile Include="Internal\PropertyArgumentBuilder.cs" />
+    <Compile Include="Internal\PropertyValueBuilder.cs" />
+    <Compile Include="Internal\StubMockStyleDictionary.cs" />
+    <Compile Include="Internal\UnorderedExpectations.cs" />
+    <Compile Include="Syntax\Invoke.cs" />
+    <Compile Include="Syntax\Is.cs" />
+    <Compile Include="Interfaces\ISelfDescribing.cs" />
+    <Compile Include="Matchers\Matcher.cs" />
+    <Compile Include="Matchers\AlwaysMatcher.cs" />
+    <Compile Include="Matchers\AndMatcher.cs" />
+    <Compile Include="Matchers\ArgumentsMatcher.cs" />
+    <Compile Include="Matchers\BinaryOperator.cs" />
+    <Compile Include="Matchers\ComparisonMatcher.cs" />
+    <Compile Include="Matchers\DescriptionOverride.cs" />
+    <Compile Include="Matchers\ElementMatcher.cs" />
+    <Compile Include="Matchers\EqualMatcher.cs" />
+    <Compile Include="Matchers\FieldMatcher.cs" />
+    <Compile Include="Matchers\GenericMatcher.cs" />
+    <Compile Include="Matchers\GenericMethodTypeParametersMatcher.cs" />
+    <Compile Include="Matchers\IndexGetterArgumentsMatcher.cs" />
+    <Compile Include="Matchers\IndexSetterArgumentsMatcher.cs" />
+    <Compile Include="Matchers\LikeMatcher.cs" />
+    <Compile Include="Matchers\ListMatcher.cs" />
+    <Compile Include="Matchers\MethodNameMatcher.cs" />
+    <Compile Include="Matchers\NotMatcher.cs" />
+    <Compile Include="Matchers\NullMatcher.cs" />
+    <Compile Include="Matchers\OrMatcher.cs" />
+    <Compile Include="Matchers\PropertyMatcher.cs" />
+    <Compile Include="Matchers\StringContainsMatcher.cs" />
+    <Compile Include="Matchers\ToStringMatcher.cs" />
+    <Compile Include="Matchers\TypeMatcher.cs" />
+    <Compile Include="MockOfT.cs" />
+    <Compile Include="MockFactory.cs" />
+    <Compile Include="MockStyle.cs" />
+    <Compile Include="Proxy\Castle\CastleMockObjectFactory.cs" />
+    <Compile Include="Proxy\Castle\DynamicProxyMockObjectFactory.cs" />
+    <Compile Include="Monitoring\IInvokable.cs" />
+    <Compile Include="Proxy\IMockObjectFactory.cs" />
+    <Compile Include="Monitoring\Invocation.cs" />
+    <Compile Include="Proxy\Castle\MockObjectInterceptor.cs" />
+    <Compile Include="Monitoring\ParameterList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Syntax\Return.cs" />
+    <Compile Include="Syntax\Signal.cs" />
+    <Compile Include="Stub.cs" />
+    <Compile Include="Interfaces\IActionSyntax.cs" />
+    <Compile Include="Interfaces\IArgumentSyntax.cs" />
+    <Compile Include="Interfaces\IAutoActionSyntax.cs" />
+    <Compile Include="Interfaces\IAutoArgumentSyntax.cs" />
+    <Compile Include="Interfaces\IAutoMatchSyntax.cs" />
+    <Compile Include="Interfaces\IAutoValueSyntax.cs" />
+    <Compile Include="Interfaces\ICommentSyntax.cs" />
+    <Compile Include="Interfaces\IMatchSyntax.cs" />
+    <Compile Include="Interfaces\IMethodSyntax.cs" />
+    <Compile Include="Interfaces\IMethodSyntax.Generic.cs" />
+    <Compile Include="Interfaces\IMockDefinitionSyntax.cs" />
+    <Compile Include="Interfaces\IValueSyntax.cs" />
+    <Compile Include="Syntax\Throw.cs" />
+    <Compile Include="That.cs" />
+    <Compile Include="Verify.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Solution Items\NMock.snk">
+      <Link>NMock.snk</Link>
+    </None>
+    <None Include="ilmerge.exclusions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)NMock3.xml" "$(SolutionDir)Solution Items\Merged Assemblies\v40\NMock3.xml" /Y
+"$(SolutionDir)Solution Items\tools\ilmerge\ilmerge.exe" /out:"$(SolutionDir)Solution Items\Merged Assemblies\v40\NMock3.dll" /keyfile:"$(SolutionDir)Solution Items\NMock.snk" /internalize:"$(ProjectDir)ilmerge.exclusions.txt" /log:"$(SolutionDir)Solution Items\Merged Assemblies\v40\NMock.ilmerge.log.txt" "$(TargetPath)" "$(SolutionDir)Solution Items\Assemblies\castle\v40\Castle.Core.dll" "$(SolutionDir)Solution Items\Assemblies\LinFu\LinFu.Core.dll" /xmldocs /targetplatform:v4,C:\Windows\Microsoft.NET\Framework\v4.0.30319</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
