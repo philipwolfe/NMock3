@@ -154,36 +154,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Global Code Files", "Global
 	EndProjectSection
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs07
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = NMock\\NMock.csproj
-		SccProjectTopLevelParentUniqueName1 = NMock3.sln
-		SccProjectName1 = NMock
-		SccLocalPath1 = NMock
-		SccProjectUniqueName2 = NMock.UnitTests\\NMock.UnitTests.csproj
-		SccProjectTopLevelParentUniqueName2 = NMock3.sln
-		SccProjectName2 = NMock.UnitTests
-		SccLocalPath2 = NMock.UnitTests
-		SccProjectUniqueName3 = SL4\\NMock\\NMock.SL4.csproj
-		SccProjectTopLevelParentUniqueName3 = NMock3.sln
-		SccProjectName3 = SL4/NMock
-		SccLocalPath3 = SL4\\NMock
-		SccProjectUniqueName4 = SL4\\NMock.UnitTests\\NMock.UnitTests.SL4.csproj
-		SccProjectTopLevelParentUniqueName4 = NMock3.sln
-		SccProjectName4 = SL4/NMock.UnitTests
-		SccLocalPath4 = SL4\\NMock.UnitTests
-		SccProjectUniqueName5 = FX35\\NMock\\NMock.FX35.csproj
-		SccProjectTopLevelParentUniqueName5 = NMock3.sln
-		SccProjectName5 = FX35/NMock
-		SccLocalPath5 = FX35\\NMock
-		SccProjectUniqueName6 = FX35\\NMock.UnitTests\\NMock.UnitTests.FX35.csproj
-		SccProjectTopLevelParentUniqueName6 = NMock3.sln
-		SccProjectName6 = FX35/NMock.UnitTests
-		SccLocalPath6 = FX35\\NMock.UnitTests
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

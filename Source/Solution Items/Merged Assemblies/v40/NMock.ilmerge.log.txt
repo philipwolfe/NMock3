@@ -212,3 +212,110 @@ Location for referenced assembly 'ISymWrapper' is 'C:\Windows\Microsoft.NET\Fram
 Location for referenced assembly 'Microsoft.Build.Framework' is 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Build.Framework.dll'
 	There were no errors reported in  Microsoft.Build.Framework's metadata.
 ILMerge: Done.
+ILMerge version 2.12.803.0
+Copyright (C) Microsoft Corporation 2004-2006. All rights reserved.
+ILMerge /out:C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Merged Assemblies\v40\NMock3.dll /keyfile:C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\NMock.snk /internalize:C:\Users\pwolfe\Documents\GitHub\NMock3\Source\NMock\ilmerge.exclusions.txt /log:C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Merged Assemblies\v40\NMock.ilmerge.log.txt C:\Users\pwolfe\Documents\GitHub\NMock3\Source\NMock\bin\Debug\NMock3.dll C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Assemblies\castle\v40\Castle.Core.dll C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Assemblies\LinFu\LinFu.Core.dll /xmldocs /targetplatform:v4,C:\Windows\Microsoft.NET\Framework\v4.0.30319 
+Set platform to 'v4', using directory 'C:\Windows\Microsoft.NET\Framework\v4.0.30319' for mscorlib.dll
+Running on Microsoft (R) .NET Framework v2.0.50727
+mscorlib.dll version = 2.0.0.0
+Read 5 lines from the exclusion file 'C:\Users\pwolfe\Documents\GitHub\NMock3\Source\NMock\ilmerge.exclusions.txt'.
+The list of input assemblies is:
+	C:\Users\pwolfe\Documents\GitHub\NMock3\Source\NMock\bin\Debug\NMock3.dll
+	C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Assemblies\castle\v40\Castle.Core.dll
+	C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Assemblies\LinFu\LinFu.Core.dll
+Trying to read assembly from the file 'C:\Users\pwolfe\Documents\GitHub\NMock3\Source\NMock\bin\Debug\NMock3.dll'.
+	Successfully read in assembly.
+	There were no errors reported in NMock3's metadata.
+Trying to read assembly from the file 'C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Assemblies\castle\v40\Castle.Core.dll'.
+	Successfully read in assembly.
+	There were no errors reported in Castle.Core's metadata.
+Trying to read assembly from the file 'C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Assemblies\LinFu\LinFu.Core.dll'.
+Can not find PDB file. Debug info will not be available for assembly 'C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Assemblies\LinFu\LinFu.Core.dll'.
+	Successfully read in assembly.
+	There were no errors reported in LinFu.Core's metadata.
+Checking to see that all of the input assemblies have a compatible PeKind.
+	NMock3.PeKind = ILonly
+	Castle.Core.PeKind = ILonly
+	LinFu.Core.PeKind = ILonly
+All input assemblies have a compatible PeKind value.
+AssemblyResolver: Assembly 'NMock3' is referencing assembly 'System.Core'.
+	AssemblyResolver: Attempting referencing assembly's directory.
+	AssemblyResolver: Did not find assembly in referencing assembly's directory.
+	AssemblyResolver: Attempting input directory.
+	AssemblyResolver: Did not find assembly in input directory.
+	AssemblyResolver: Attempting user-supplied directories.
+	AssemblyResolver: No user-supplied directories.
+	AssemblyResolver: Attempting framework directory.
+Can not find PDB file. Debug info will not be available for assembly 'System.Core'.
+Resolved assembly reference 'System.Core' to 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Core.dll'. (Used framework directory.)
+AssemblyResolver: Assembly 'LinFu.Core' is referencing assembly 'Microsoft.Build.Utilities.v3.5'.
+	AssemblyResolver: Attempting referencing assembly's directory.
+	AssemblyResolver: Did not find assembly in referencing assembly's directory.
+	AssemblyResolver: Attempting input directory.
+	AssemblyResolver: Did not find assembly in input directory.
+	AssemblyResolver: Attempting user-supplied directories.
+	AssemblyResolver: No user-supplied directories.
+	AssemblyResolver: Attempting framework directory.
+	AssemblyResolver: Did not find assembly in framework directory.
+AssemblyResolver: Unable to resolve reference. (It still might be found, e.g., in the GAC.)
+AssemblyResolver: Assembly 'Microsoft.Build.Utilities.v3.5' is referencing assembly 'Microsoft.Build.Framework'.
+	AssemblyResolver: Attempting referencing assembly's directory.
+	AssemblyResolver: Did not find assembly in referencing assembly's directory.
+	AssemblyResolver: Attempting input directory.
+	AssemblyResolver: Did not find assembly in input directory.
+	AssemblyResolver: Attempting user-supplied directories.
+	AssemblyResolver: No user-supplied directories.
+	AssemblyResolver: Attempting framework directory.
+Can not find PDB file. Debug info will not be available for assembly 'Microsoft.Build.Framework'.
+Resolved assembly reference 'Microsoft.Build.Framework' to 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Build.Framework.dll'. (Used framework directory.)
+AssemblyResolver: Assembly 'LinFu.Core' is referencing assembly 'System.Core'.
+	AssemblyResolver: Attempting referencing assembly's directory.
+	AssemblyResolver: Did not find assembly in referencing assembly's directory.
+	AssemblyResolver: Attempting input directory.
+	AssemblyResolver: Did not find assembly in input directory.
+	AssemblyResolver: Attempting user-supplied directories.
+	AssemblyResolver: No user-supplied directories.
+	AssemblyResolver: Attempting framework directory.
+Can not find PDB file. Debug info will not be available for assembly 'System.Core'.
+Resolved assembly reference 'System.Core' to 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Core.dll'. (Used framework directory.)
+Using assembly 'NMock3' for assembly-level attributes for the target assembly.
+Merging assembly 'NMock3' into target assembly.
+Merging assembly 'Castle.Core' into target assembly.
+Assembly level attribute 'System.Security.AllowPartiallyTrustedCallersAttribute' from assembly 'Castle.Core' being deleted from target assembly
+Merging assembly 'LinFu.Core' into target assembly.
+Duplicate type name: modifying name of the type '<>f__AnonymousType0`2' (from assembly 'LinFu.Core') to 'LinFu.Core.<>f__AnonymousType0`2'
+Duplicate type name: modifying name of the type '<>f__AnonymousType1`2' (from assembly 'LinFu.Core') to 'LinFu.Core.<>f__AnonymousType1`2'
+Assembly level attribute 'System.Security.AllowPartiallyTrustedCallersAttribute' from assembly 'LinFu.Core' being deleted from target assembly
+Copying 1 Win32 Resources from assembly 'NMock3' into target assembly.
+ILMerge: Signing assembly with the key file 'C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\NMock.snk'.
+	There were no errors reported in the target assembly's metadata.
+ILMerge: Writing target assembly 'C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Merged Assemblies\v40\NMock3.dll'.
+AssemblyResolver: Assembly 'Castle.Core' is referencing assembly 'System.Configuration'.
+	AssemblyResolver: Attempting referencing assembly's directory.
+	AssemblyResolver: Did not find assembly in referencing assembly's directory.
+	AssemblyResolver: Attempting input directory.
+	AssemblyResolver: Did not find assembly in input directory.
+	AssemblyResolver: Attempting user-supplied directories.
+	AssemblyResolver: No user-supplied directories.
+	AssemblyResolver: Attempting framework directory.
+Can not find PDB file. Debug info will not be available for assembly 'System.Configuration'.
+Resolved assembly reference 'System.Configuration' to 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Configuration.dll'. (Used framework directory.)
+ILMerge: Signed assembly 'C:\Users\pwolfe\Documents\GitHub\NMock3\Source\Solution Items\Merged Assemblies\v40\NMock3.dll' with a strong name.
+Location for referenced module 'ole32.dll' is ''
+Location for referenced assembly 'mscorlib' is 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll'
+	There were no errors reported in  mscorlib's metadata.
+Location for referenced assembly 'System.Core' is 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Core.dll'
+	There were no errors reported in  System.Core's metadata.
+Location for referenced assembly 'System' is 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\system.dll'
+	There were no errors reported in  System's metadata.
+Location for referenced assembly 'System.Xml' is 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Xml.dll'
+	There were no errors reported in  System.Xml's metadata.
+Location for referenced assembly 'System.Configuration' is 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Configuration.dll'
+	There were no errors reported in  System.Configuration's metadata.
+Location for referenced assembly 'Microsoft.Build.Utilities.v3.5' is 'C:\Windows\assembly\GAC_MSIL\Microsoft.Build.Utilities.v3.5\3.5.0.0__b03f5f7f11d50a3a\Microsoft.Build.Utilities.v3.5.dll'
+	There were no errors reported in  Microsoft.Build.Utilities.v3.5's metadata.
+Location for referenced assembly 'ISymWrapper' is 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\ISymWrapper.dll'
+	There were no errors reported in  ISymWrapper's metadata.
+Location for referenced assembly 'Microsoft.Build.Framework' is 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Build.Framework.dll'
+	There were no errors reported in  Microsoft.Build.Framework's metadata.
+ILMerge: Done.
